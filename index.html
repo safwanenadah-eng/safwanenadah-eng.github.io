@@ -14,6 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://safwanenadah-eng.github.io/assets/images/digital-twin.png">
 
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2338bdf8'%3ESN%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -29,6 +30,7 @@
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#projects">Projets</a></li>
+                    <li><a href="#credentials">Parcours</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -65,9 +67,9 @@
                     <p>Mes projets couvrent l'<strong>ordonnancement FreeRTOS</strong> (interruptions différées, inversion de priorité, mutex, files de messages), l'<strong>asservissement PID</strong>, la <strong>simulation robotique</strong> et la <strong>prédiction de durée de vie restante (RUL)</strong> par Deep Learning.</p>
                     <p>Je suis à la recherche d'un <strong>stage PFE</strong> ou d'une collaboration sur des projets d'automatique, d'embarqué ou de maintenance prédictive.</p>
                     <div class="stats">
-                        <div class="stat"><strong>5+</strong><span>Projets majeurs</span></div>
-                        <div class="stat"><strong>10+</strong><span>Dépôts GitHub</span></div>
-                        <div class="stat"><strong>4</strong><span>Domaines maîtrisés</span></div>
+                        <div class="stat"><strong>6</strong><span>Projets présentés</span></div>
+                        <div class="stat"><strong>2</strong><span>Certifications MathWorks</span></div>
+                        <div class="stat"><strong>3</strong><span>Langues parlées</span></div>
                     </div>
                 </div>
                 <aside class="info-card reveal">
@@ -206,27 +208,42 @@
                 </article>
             </div>
 
-            <h3 class="subtitle reveal">Laboratoires FreeRTOS (ATmega328P)</h3>
-            <div class="mini-grid">
-                <div class="mini-card reveal">
-                    <h4><i class="fas fa-bolt"></i> Deferred Interrupt</h4>
-                    <p>Traitement différé des interruptions avec sémaphore binaire, simulé sous Proteus VSM.</p>
-                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/safwanenadah-eng/freertos-atmega328p-deferred-interrupt"><i class="fab fa-github"></i> Code</a>
+            <div class="more-projects reveal">
+                <p>D'autres travaux pratiques FreeRTOS (mutex, inversion de priorité, interruptions différées) sont disponibles sur mon GitHub.</p>
+                <a href="https://github.com/safwanenadah-eng?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fab fa-github"></i> Voir tous mes dépôts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation, certifications, langues -->
+    <section id="credentials">
+        <div class="container">
+            <h2 class="section-title reveal">Parcours</h2>
+            <p class="section-sub reveal">Formation, certifications et langues.</p>
+            <div class="cred-grid">
+                <div class="cred-card reveal">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Formation</h3>
+                    <ul class="cred-list">
+                        <li><div>Cycle ingénieur – Génie Mécatronique<small>École Nationale des Sciences Appliquées (ENSA), Fès</small></div></li>
+                    </ul>
                 </div>
-                <div class="mini-card reveal">
-                    <h4><i class="fas fa-arrow-up-wide-short"></i> Priority Inversion</h4>
-                    <p>Validation expérimentale de l'héritage de priorité pour résoudre l'inversion de priorité.</p>
-                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/safwanenadah-eng/freertos-atmega328p-priority-inversion"><i class="fab fa-github"></i> Code</a>
+                <div class="cred-card reveal">
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certifications</h3>
+                    <ul class="cred-list">
+                        <li><div>MATLAB Onramp<small>MathWorks</small></div><span class="badge">2026</span></li>
+                        <li><div>Simulink Onramp<small>MathWorks</small></div><span class="badge">2026</span></li>
+                    </ul>
                 </div>
-                <div class="mini-card reveal">
-                    <h4><i class="fas fa-lock"></i> UART Mutex</h4>
-                    <p>Pilote UART thread-safe protégé par mutex pour éviter les conflits d'accès concurrents.</p>
-                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/safwanenadah-eng/freertos-atmega328p-uart-mutex"><i class="fab fa-github"></i> Code</a>
-                </div>
-                <div class="mini-card reveal">
-                    <h4><i class="fas fa-calendar-check"></i> Event Management</h4>
-                    <p>Gestion d'événements bare-metal avec Makefile personnalisé et simulation Proteus.</p>
-                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/safwanenadah-eng/freertos-atmega328p-event-management"><i class="fab fa-github"></i> Code</a>
+                <div class="cred-card reveal">
+                    <div class="icon"><i class="fas fa-language"></i></div>
+                    <h3>Langues</h3>
+                    <ul class="cred-list">
+                        <li><span>Arabe</span><span class="badge">Langue maternelle</span></li>
+                        <li><span>Français</span><span class="badge">B2</span></li>
+                        <li><span>Anglais</span><span class="badge">B2</span></li>
+                    </ul>
                 </div>
             </div>
         </div>

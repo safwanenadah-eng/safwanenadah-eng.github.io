@@ -123,7 +123,7 @@ section { padding: 5rem 0; }
 .stat span { color: var(--muted); font-size: .85rem; }
 
 /* ---------- Compétences ---------- */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .skill-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.7rem; transition: transform .25s, border-color .25s; }
 .skill-card:hover { transform: translateY(-5px); border-color: var(--accent); }
 .skill-card .icon {
@@ -152,15 +152,6 @@ section { padding: 5rem 0; }
 .tags span { font-size: .74rem; padding: .22rem .65rem; border-radius: 999px; background: rgba(56, 189, 248, .1); color: var(--accent); border: 1px solid rgba(56, 189, 248, .25); }
 .project-link { margin-top: auto; display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; font-size: .92rem; color: var(--accent); }
 .project-link:hover { text-decoration: underline; }
-
-/* Projets secondaires (FreeRTOS) */
-.subtitle { margin: 4rem 0 1.5rem; font-size: 1.4rem; text-align: center; }
-.mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.2rem; }
-.mini-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.3rem; transition: border-color .25s, transform .25s; }
-.mini-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-.mini-card h4 { font-size: 1rem; margin-bottom: .5rem; }
-.mini-card h4 i { color: var(--accent); margin-right: .4rem; }
-.mini-card p { color: var(--muted); font-size: .88rem; }
 
 /* ---------- Contact ---------- */
 .contact-section { background: linear-gradient(135deg, rgba(56, 189, 248, .08), rgba(129, 140, 248, .08)), var(--bg-alt); }
@@ -200,4 +191,28 @@ footer { padding: 1.8rem 0; border-top: 1px solid var(--border); color: var(--mu
     * { animation: none !important; transition: none !important; }
     html { scroll-behavior: auto; }
     .reveal { opacity: 1; transform: none; }
+}
+
+
+/* ---------- Plus de projets ---------- */
+.more-projects { text-align: center; margin-top: 3rem; color: var(--muted); }
+.more-projects p { margin-bottom: 1.2rem; }
+
+/* ---------- Formation, certifications, langues ---------- */
+.cred-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.cred-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.8rem; transition: border-color .25s, transform .25s; }
+.cred-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+.cred-card .icon { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; background: rgba(56, 189, 248, .12); color: var(--accent); font-size: 1.3rem; margin-bottom: 1rem; }
+.cred-card h3 { font-size: 1.1rem; margin-bottom: 1rem; }
+.cred-list li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border); font-size: .93rem; }
+.cred-list li:last-child { border-bottom: 0; }
+.cred-list small { display: block; color: var(--muted); font-size: .8rem; }
+.badge { background: rgba(129, 140, 248, .15); color: #c7d2fe; padding: .2rem .65rem; border-radius: 999px; font-size: .75rem; font-weight: 600; white-space: nowrap; }
+
+@media (max-width: 960px) {
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .cred-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+    .skills-grid { grid-template-columns: 1fr; }
 }
